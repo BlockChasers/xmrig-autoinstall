@@ -8,9 +8,9 @@ This script was initially hacked for HiveOS as it will overwrite/uninstall XMRig
 
 Monitor logs with `tail -f /var/log/xmrig.log`
 
-Script can be re-run with new parameters but it will delete XMRig and re-git/compile.
+You may keep the script in place and it can be re-run with new configuration but it will delete XMRig and re-git/compile.
 
-You must initiate these re-compiles manually, to update the XMRig according to their update schedule. 
+You must initiate these re-compiles manually, to update the XMRig according to their update schedule.
 
 You can also re-install or reconfigure with a different fork of XMRig (different GIT_SRC_URL)
 
