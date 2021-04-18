@@ -58,6 +58,7 @@ Probably do this weekly for now until main parts of these scripts are done. Will
 You must manually initiate the installation/reconfiguration scripts.
 It would make no sense to auto compile XMRig as the miner is currently using the binary.
 I could possibly make it copy the binary elsewhere for the service unit, then this may be possible in short future.
+I might add one more command at the bottom here in future to execute some post-update changes.
 ```
 # CHANGE TO DIR WHERE YOU INSTALLED SCRIPTS
 cd /home/USER/somedir/
