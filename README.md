@@ -11,13 +11,16 @@ Plans to add logrotate in future. Script can be re-run with new parameters but i
 
 ### Auto Install XMRig
 ```
+# USE --coin <coin> OR CHANGE TO --algo <algo>
+export POOL_COIN="--coin monero"
+
+# Enable TLS by removing '#' - Disable TLS by prepending '#' or skipping
+#export $POOL_TLS="--tls"
+
 export $POOL_HOST=gulf.moneroocean.stream
 export $POOL_PORT=10001
 export $POOL_USER=MY_MONERO_ADDRESS
 export $POOL_PASS=MY_POOL_PASS
-
-# Enable TLS by removing '#' - Disable TLS by prepending '#' or skipping
-#export $POOL_TLS="--tls"
 
 wget -O installer.sh https://github.com/BlockChasers/xmrig-autoinstall/raw/main/xmrig-installer.sh
 
@@ -28,6 +31,9 @@ chmod +x installer.sh
 
 ### Auto Install XMRig (HiveOS)
 ```
+# USE --coin <coin> OR CHANGE TO --algo <algo>
+export POOL_COIN="--coin monero"
+
 export $POOL_HOST=gulf.moneroocean.stream
 export $POOL_PORT=10001
 export $POOL_USER=MY_MONERO_ADDRESS
