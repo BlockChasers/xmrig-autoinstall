@@ -49,4 +49,12 @@ chmod +x *.sh
 
 ```
 
+### Update Git Sources (scripts)
+```
+# CHANGE TO DIR WHERE YOU INSTALLED SCRIPTS
+cd /home/USER/somedir/
+
+git pull
+```
+
 EOF
