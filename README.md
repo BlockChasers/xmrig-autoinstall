@@ -14,7 +14,7 @@ You must initiate these re-compiles manually, to update the XMRig according to t
 
 You can also re-install or reconfigure with a different fork of XMRig (different GIT_SRC_URL)
 
-**WARNING: The script currently installs the miners to /root/MINERS/xmrig.** This is a side effect from running on my own machines, and the script being under development. I will fix this tomorrow ;)
+**WARNING: The script currently installs the XMRIG to /root/MINERS/xmrig.** This is a side effect from running on my own machines, and the script being under development. I will fix this tomorrow to install to system directory hidden away somewhere ;)
 
 ### Features
 - Auto-Build XMRig (MoneroOcean version)
