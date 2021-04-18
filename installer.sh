@@ -13,6 +13,8 @@ apt install -y htop cpulimit git build-essential cmake libuv1-dev libhwloc-dev a
 
 echo "CREATING DIRECTORIES"
 
+cd /root/
+
 mkdir MINERS
 cd MINERS
 
@@ -31,6 +33,10 @@ cmake ./ -DWITH_TLS=OFF
 echo "MAKE XMRIG"
 
 make
+
+move xmrig-notls xmrig
+
+chmod +x xmrig
 
 echo "INSTALLING XMRIG SERVICE"
 
