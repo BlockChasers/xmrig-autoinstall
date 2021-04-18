@@ -22,6 +22,9 @@ export $POOL_PORT=10001
 export $POOL_USER=MY_MONERO_ADDRESS
 export $POOL_PASS=MY_POOL_PASS
 
+# Enable LOGGING by removing '#' - Disable LOGGING by prepending '#' or skipping
+export POOL_LOG="--log-file=/var/log/xmrig.log"
+
 wget -O installer.sh https://github.com/BlockChasers/xmrig-autoinstall/raw/main/xmrig-installer.sh
 
 chmod +x installer.sh
@@ -38,6 +41,9 @@ export $POOL_HOST=gulf.moneroocean.stream
 export $POOL_PORT=10001
 export $POOL_USER=MY_MONERO_ADDRESS
 export $POOL_PASS=MY_POOL_PASS
+
+# Enable LOGGING by removing '#' - Disable LOGGING by prepending '#' or skipping
+export POOL_LOG="--log-file=/var/log/xmrig.log"
 
 wget -O installer.sh https://github.com/BlockChasers/xmrig-autoinstall/raw/main/hiveos-xmrig-installer.sh
 
