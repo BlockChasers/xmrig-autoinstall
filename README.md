@@ -55,6 +55,23 @@ chmod +x *.sh
 
 ```
 
+Each time you run the script, you must run the following prior to proceeding:
+```
+# CHANGE TO INSTALL DIR
+cd /home/USER/somedir/
+
+nano .config
+
+source .config
+
+# RUN THIS TO INSTALL XMRIG (GENERAL)
+./xmrig-installer.sh
+
+# RUN THIS TO INSTALL XMRIG (HIVEOS - RUN IN HIVE SHELL)
+./hiveos-xmrig-installer.sh
+
+```
+
 ### Update Git Sources (scripts)
 Probably do this weekly for now until main parts of these scripts are done. Will add auto-update script repos in future.
 You must manually initiate the installation/reconfiguration scripts.
