@@ -9,6 +9,11 @@ Monitor logs with `tail -f /var/log/xmrig.log`
 
 Plans to add logrotate in future. Script can be re-run with new parameters but it will delete XMRig and re-git/compile.
 
+## General Instructions
+Just paste the export lines one at a time and edit them to set miner settings.
+If you make a mistake, no need to start from step one, just repaste, and re-edit the line and hit enter again.
+This may or may not be made interactive in the future.
+
 ### Auto Install XMRig
 ```
 # USE --coin <coin> OR CHANGE TO --algo <algo>
