@@ -2,7 +2,10 @@
 
 This script will auto install XMRig as a service, start the service with logging, and enable at boot time.
 
-This script was initially hacked for HiveOS as it will overwrite when HiveOS updates. Doing all this work over and over does not sound like fun, so this will make it a one line install process.
+This script was initially hacked for HiveOS as it will overwrite/uninstall XMRig when HiveOS updates. 
+Doing all this work over and over does not sound like fun, so this will make it a one line install process.
+
+Monitor logs with `tail -f /var/log/xmrig.log`
 
 ### Auto Install XMRig
 ```
