@@ -7,6 +7,8 @@ Doing all this work over and over does not sound like fun, so this will make it 
 
 Monitor logs with `tail -f /var/log/xmrig.log`
 
+Plans to add logrotate in future. Script can be re-run with new parameters but it will delete XMRig and re-git/compile.
+
 ### Auto Install XMRig
 ```
 export $POOL_HOST=gulf.moneroocean.stream
