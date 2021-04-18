@@ -57,8 +57,9 @@ chmod +x *.sh
 
 The following is an example how to re-run the script to re-configure/re-compile:
 ```
-# CHANGE TO INSTALL DIR
+# CHANGE TO DIR WHERE YOU INSTALLED SCRIPTS
 cd /home/USER/somedir/
+cd xmrig-autoinstall
 
 nano .config
 
