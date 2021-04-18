@@ -19,7 +19,7 @@ echo "CLONING XMRIG"
 rm -rf xmrig
 git clone ${GIT_SRC_URL} ${DIR_NAME}
 
-cd xmrig
+cd ${DIR_NAME}
 
 echo "CMAKE XMRIG"
 
