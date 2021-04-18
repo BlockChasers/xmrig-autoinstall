@@ -1,6 +1,6 @@
 # xmrig-installer
 
-This script will auto install XMRig as a service, start the service with logging, and enable at boot time. 
+This script will auto install XMRig (MoneroOcean version) as a service, start the service with logging, and enable at boot time. 
 
 You will be able to easily modify the script to change to a different GIT_SRC_URL but be sure the required packages are matching the readme for that version of XMRig. This script can be used to auto-deploy XMRig miners very quickly.
 
@@ -24,16 +24,21 @@ The configuration may or may not be made interactive in the future.
 
 ### Auto Install XMRig
 ```
-# If you don't have GIT or unsure
+# IF YOU DONT HAVE GIT OR ARE UNSURE
 sudo apt update ; sudo apt install -y git
 
+# CHANGE TO DIR WHERE YOU WANT INSTALLER/SCRIPTS
 cd /home/USER/somedir/
 
+# GIT THE REPO
 git clone https://github.com/BlockChasers/xmrig-autoinstall.git
+cd xmrig-autoinstall
 
 # EDIT CONFIG FILE & KEEP IN SAME DIR AS INSTALL SCRIPT
 nano .config
 
+# JUST RUN THESE
+source .config
 chmod +x *.sh
 
 # RUN THIS TO INSTALL XMRIG (GENERAL)
