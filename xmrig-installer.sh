@@ -7,7 +7,7 @@ apt upgrade -y ; apt dist-upgrade -y ;
 
 echo "INSTALLING REQ'D PACKAGES"
 
-apt install -y logrotate cpulimit git build-essential cmake libuv1-dev libssl-dev libhwloc-dev automake libtool autoconf ;
+apt install -y logrotate ntp ntpdate cpulimit git build-essential cmake libuv1-dev libssl-dev libhwloc-dev automake libtool autoconf ;
 
 echo "CREATING DIRECTORIES"
 
@@ -59,5 +59,12 @@ service xmrig start
 
 echo "STARTING XMRIG SERVICE @ BOOT"
 
+service logrotate start
+service ntp start
+service xmrig start
+
+systemctl enable logrotate
+systemctl enable ntp
 systemctl enable xmrig
 
+#EOF
