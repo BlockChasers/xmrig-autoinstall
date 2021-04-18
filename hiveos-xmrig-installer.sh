@@ -12,17 +12,15 @@ apt install -y dialog logrotate ntp ntpdate cpulimit ${APT_REQ_PKGS} ;
 
 echo "CREATING DIRECTORIES"
 
-cd /root/
-
-mkdir MINERS
-cd MINERS
+mkdir -p ${INSTALL_DIR}
+cd ${INSTALL_DIR}
 
 echo "CLONING XMRIG"
 
 rm -rf xmrig
-git clone ${GIT_SRC_URL}
+git clone ${GIT_SRC_URL} ${DIR_NAME}
 
-cd xmrig
+cd ${DIR_NAME}
 
 echo "CMAKE XMRIG"
 
