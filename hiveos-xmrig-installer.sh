@@ -8,7 +8,7 @@ echo "INSTALLING REQ'D PACKAGES"
 
 # libssl-dev (REMOVED  FOR HIVEOS ONLY)
 
-apt install -y logrotate ntp ntpdate cpulimit git build-essential cmake libuv1-dev libhwloc-dev automake libtool autoconf ;
+apt install -y dialog logrotate ntp ntpdate cpulimit ${APT_REQ_PKGS} ;
 
 echo "CREATING DIRECTORIES"
 
