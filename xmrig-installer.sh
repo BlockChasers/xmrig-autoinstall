@@ -7,9 +7,7 @@ apt upgrade -y ; apt dist-upgrade -y ;
 
 echo "INSTALLING REQ'D PACKAGES"
 
-# libssl-dev (REMOVED  FOR HIVEOS ONLY)
-
-apt install -y htop cpulimit git build-essential cmake libuv1-dev libhwloc-dev automake libtool autoconf ;
+apt install -y htop cpulimit git build-essential cmake libuv1-dev libssl-dev libhwloc-dev automake libtool autoconf ;
 
 echo "CREATING DIRECTORIES"
 
@@ -26,15 +24,11 @@ cd xmrig
 
 echo "CMAKE XMRIG"
 
-# TLS OFF FOR HIVEOS ONLY
-
-cmake ./ -DWITH_TLS=OFF
+cmake ./
 
 echo "MAKE XMRIG"
 
 make
-
-move xmrig-notls xmrig
 
 chmod +x xmrig
 
