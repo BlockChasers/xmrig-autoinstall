@@ -7,7 +7,7 @@ apt upgrade -y ; apt dist-upgrade -y ;
 
 echo "INSTALLING REQ'D PACKAGES"
 
-apt install -y logrotate ntp ntpdate cpulimit git build-essential cmake libuv1-dev libssl-dev libhwloc-dev automake libtool autoconf ;
+apt install -y logrotate ntp ntpdate cpulimit ${APT_REQ_PKGS} ;
 
 echo "CREATING DIRECTORIES"
 
