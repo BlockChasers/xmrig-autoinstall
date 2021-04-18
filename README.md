@@ -18,51 +18,30 @@ Script can be re-run with new parameters but it will delete XMRig and re-git/com
 - Update configuration script
 
 ## General Instructions
-Just paste the export lines one at a time and edit them to set miner settings.
-If you make a mistake, no need to start from step one, just repaste, and re-edit the line and hit enter again.
-This may or may not be made interactive in the future.
+Just copy the commands either on your regular linux machine (Debian, Ubuntu) or on a HiveOS Rig - you just have to open Hive Shell, right click, paste in browser, and paste each line one at a time and press OK.
+
+The configuration may or may not be made interactive in the future.
 
 ### Auto Install XMRig
 ```
-# USE --coin <coin> OR CHANGE TO --algo <algo>
-export POOL_COIN="--coin monero"
+# If you don't have GIT or unsure
+sudo apt update ; sudo apt install -y git
 
-# Enable TLS by removing '#' - Disable TLS by prepending '#' or skipping
-#export POOL_TLS="--tls"
+cd /home/USER/somedir/
 
-export POOL_HOST=gulf.moneroocean.stream
-export POOL_PORT=10001
-export POOL_USER=MY_MONERO_ADDRESS
-export POOL_PASS=MY_POOL_PASS
+git clone https://github.com/BlockChasers/xmrig-autoinstall.git
 
-# Enable LOGGING by removing '#' - Disable LOGGING by prepending '#' or skipping
-export POOL_LOG="--log-file=/var/log/xmrig.log"
+# EDIT CONFIG FILE & KEEP IN SAME DIR AS INSTALL SCRIPT
+nano .config
 
-wget -O installer.sh https://github.com/BlockChasers/xmrig-autoinstall/raw/main/xmrig-installer.sh
+chmod +x *.sh
 
-chmod +x installer.sh
+# RUN THIS TO INSTALL XMRIG (GENERAL)
+./xmrig-installer.sh
 
-./installer.sh
-```
+# RUN THIS TO INSTALL XMRIG (HIVEOS - RUN IN HIVE SHELL)
+./hiveos-xmrig-installer.sh
 
-### Auto Install XMRig (HiveOS)
-```
-# USE --coin <coin> OR CHANGE TO --algo <algo>
-export POOL_COIN="--coin monero"
-
-export POOL_HOST=gulf.moneroocean.stream
-export POOL_PORT=10001
-export POOL_USER=MY_MONERO_ADDRESS
-export POOL_PASS=MY_POOL_PASS
-
-# Enable LOGGING by removing '#' - Disable LOGGING by prepending '#' or skipping
-export POOL_LOG="--log-file=/var/log/xmrig.log"
-
-wget -O installer.sh https://github.com/BlockChasers/xmrig-autoinstall/raw/main/hiveos-xmrig-installer.sh
-
-chmod +x installer.sh
-
-./installer.sh
 ```
 
 EOF
