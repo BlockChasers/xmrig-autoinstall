@@ -7,7 +7,7 @@ apt upgrade -y ; apt dist-upgrade -y ;
 
 echo "INSTALLING REQ'D PACKAGES"
 
-apt install -y htop cpulimit git build-essential cmake libuv1-dev libssl-dev libhwloc-dev automake libtool autoconf ;
+apt install -y logrotate cpulimit git build-essential cmake libuv1-dev libssl-dev libhwloc-dev automake libtool autoconf ;
 
 echo "CREATING DIRECTORIES"
 
