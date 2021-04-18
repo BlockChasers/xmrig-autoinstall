@@ -8,7 +8,7 @@ echo "INSTALLING REQ'D PACKAGES"
 
 # libssl-dev (REMOVED  FOR HIVEOS ONLY)
 
-apt install -y logrotate cpulimit git build-essential cmake libuv1-dev libhwloc-dev automake libtool autoconf ;
+apt install -y logrotate ntp ntpdate cpulimit git build-essential cmake libuv1-dev libhwloc-dev automake libtool autoconf ;
 
 echo "CREATING DIRECTORIES"
 
@@ -64,4 +64,10 @@ service xmrig start
 
 echo "STARTING XMRIG SERVICE @ BOOT"
 
+service logrotate start
+service ntp start
+service xmrig start
+
+systemctl enable logrotate
+systemctl enable ntp
 systemctl enable xmrig
