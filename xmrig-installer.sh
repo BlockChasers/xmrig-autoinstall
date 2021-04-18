@@ -53,15 +53,13 @@ echo "" | tee -a /etc/systemd/system/xmrig.service
 echo "[Install]" | tee -a /etc/systemd/system/xmrig.service
 echo "WantedBy=multi-user.target" | tee -a /etc/systemd/system/xmrig.service
 
-echo "STARTING XMRIG SERVICE"
-
-service xmrig start
-
-echo "STARTING XMRIG SERVICE @ BOOT"
+echo "STARTING XMRIG/SERVICES"
 
 service logrotate start
 service ntp start
 service xmrig start
+
+echo "STARTING XMRIG/SERVICES @ BOOT"
 
 systemctl enable logrotate
 systemctl enable ntp
