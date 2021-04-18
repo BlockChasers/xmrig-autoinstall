@@ -9,17 +9,17 @@ Monitor logs with `tail -f /var/log/xmrig.log`
 
 Script can be re-run with new parameters but it will delete XMRig and re-git/compile.
 
-## General Instructions
-Just paste the export lines one at a time and edit them to set miner settings.
-If you make a mistake, no need to start from step one, just repaste, and re-edit the line and hit enter again.
-This may or may not be made interactive in the future.
-
 ### Features
 - Auto-Build XMRig (MoneroOcean version)
 - Auto-Create XMRig Service
 - Start XMRig service on boot
 - Start NTP & Logrotate on boot
 - Update configuration script
+
+## General Instructions
+Just paste the export lines one at a time and edit them to set miner settings.
+If you make a mistake, no need to start from step one, just repaste, and re-edit the line and hit enter again.
+This may or may not be made interactive in the future.
 
 ### Auto Install XMRig
 ```
