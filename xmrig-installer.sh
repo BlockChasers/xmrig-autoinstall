@@ -16,7 +16,7 @@ cd ${INSTALL_DIR}
 
 echo "CLONING XMRIG"
 
-rm -rf xmrig
+rm -rf ${DIR_NAME}
 git clone ${GIT_SRC_URL} ${DIR_NAME}
 
 cd ${DIR_NAME}
