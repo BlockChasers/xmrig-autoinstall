@@ -55,7 +55,7 @@ chmod +x *.sh
 
 ```
 
-Each time you run the script, you must run the following prior to proceeding:
+The following is an example how to re-run the script to re-configure/re-compile:
 ```
 # CHANGE TO INSTALL DIR
 cd /home/USER/somedir/
