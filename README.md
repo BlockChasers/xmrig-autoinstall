@@ -1,4 +1,4 @@
-# BlockChasers.ca xmrig-autoinstall
+# BlockChasers.ca xmrig-autoinstall (MoneroOcean version)
 
 This script will auto install XMRig (MoneroOcean version) as a service, start the service with logging, and enable at boot time. 
 
