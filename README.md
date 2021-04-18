@@ -10,6 +10,8 @@ export $POOL_HOST=gulf.moneroocean.stream
 export $POOL_PORT=10001
 export $POOL_USER=MY_MONERO_ADDRESS
 export $POOL_PASS=MY_POOL_PASS
+
+# Enable TLS by removing '#' - Disable TLS by prepending '#' or skipping
 #export $POOL_TLS="--tls"
 
 wget -O installer.sh https://github.com/BlockChasers/xmrig-installer/raw/main/xmrig-installer.sh
@@ -25,7 +27,6 @@ export $POOL_HOST=gulf.moneroocean.stream
 export $POOL_PORT=10001
 export $POOL_USER=MY_MONERO_ADDRESS
 export $POOL_PASS=MY_POOL_PASS
-#export $POOL_TLS="--tls"
 
 wget -O installer.sh https://github.com/BlockChasers/xmrig-installer/raw/main/hiveos-xmrig-installer.sh
 
