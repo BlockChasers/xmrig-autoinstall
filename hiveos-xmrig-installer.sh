@@ -20,7 +20,7 @@ cd MINERS
 echo "CLONING XMRIG"
 
 rm -rf xmrig
-git clone https://github.com/MoneroOcean/xmrig.git
+git clone ${GIT_SRC_URL}
 
 cd xmrig
 
