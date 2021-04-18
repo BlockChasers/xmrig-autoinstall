@@ -73,5 +73,3 @@ git pull
 Yes there will be an uninstall script ... eventually :)
 
 ~ leshacat
-
-EOF
