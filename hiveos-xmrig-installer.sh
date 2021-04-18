@@ -68,6 +68,10 @@ service logrotate start
 service ntp start
 service xmrig start
 
+echo "STARTING XMRIG/SERVICES @ BOOT"
+
 systemctl enable logrotate
 systemctl enable ntp
 systemctl enable xmrig
+
+#EOF
