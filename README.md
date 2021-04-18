@@ -20,12 +20,12 @@ This may or may not be made interactive in the future.
 export POOL_COIN="--coin monero"
 
 # Enable TLS by removing '#' - Disable TLS by prepending '#' or skipping
-#export $POOL_TLS="--tls"
+#export POOL_TLS="--tls"
 
-export $POOL_HOST=gulf.moneroocean.stream
-export $POOL_PORT=10001
-export $POOL_USER=MY_MONERO_ADDRESS
-export $POOL_PASS=MY_POOL_PASS
+export POOL_HOST=gulf.moneroocean.stream
+export POOL_PORT=10001
+export POOL_USER=MY_MONERO_ADDRESS
+export POOL_PASS=MY_POOL_PASS
 
 # Enable LOGGING by removing '#' - Disable LOGGING by prepending '#' or skipping
 export POOL_LOG="--log-file=/var/log/xmrig.log"
@@ -42,10 +42,10 @@ chmod +x installer.sh
 # USE --coin <coin> OR CHANGE TO --algo <algo>
 export POOL_COIN="--coin monero"
 
-export $POOL_HOST=gulf.moneroocean.stream
-export $POOL_PORT=10001
-export $POOL_USER=MY_MONERO_ADDRESS
-export $POOL_PASS=MY_POOL_PASS
+export POOL_HOST=gulf.moneroocean.stream
+export POOL_PORT=10001
+export POOL_USER=MY_MONERO_ADDRESS
+export POOL_PASS=MY_POOL_PASS
 
 # Enable LOGGING by removing '#' - Disable LOGGING by prepending '#' or skipping
 export POOL_LOG="--log-file=/var/log/xmrig.log"
