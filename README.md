@@ -53,6 +53,7 @@ chmod +x *.sh
 ```
 # CHANGE TO DIR WHERE YOU INSTALLED SCRIPTS
 cd /home/USER/somedir/
+cd xmrig-autoinstall
 
 git pull
 ```
