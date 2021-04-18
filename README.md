@@ -2,13 +2,17 @@
 
 This script will auto install XMRig (MoneroOcean version) as a service, start the service with logging, and enable at boot time. 
 
-You will be able to easily modify the script to change to a different GIT_SRC_URL but be sure the required packages are matching the readme for that version of XMRig. This script can be used to auto-deploy XMRig miners very quickly.
+You will be able to easily configure the script to change to a different GIT_SRC_URL but be sure the required packages are matching the readme for that version of XMRig. This script can be used to auto-deploy XMRig miners very quickly.
 
 This script was initially hacked for HiveOS as it will overwrite/uninstall XMRig when HiveOS updates. Doing all this work over and over does not sound like fun, so this will make it a one line install process. I realized afterwards that the script could be used on other machines, and made a separate/general script.
 
 Monitor logs with `tail -f /var/log/xmrig.log`
 
 Script can be re-run with new parameters but it will delete XMRig and re-git/compile.
+
+You must initiate these re-compiles manually, to update the XMRig according to their update schedule. 
+
+You can also re-install or reconfigure with a different fork of XMRig (different GIT_SRC_URL)
 
 ### Features
 - Auto-Build XMRig (MoneroOcean version)
