@@ -52,7 +52,7 @@ echo "Type=simple" | tee -a /etc/systemd/system/xmrig.service
 echo "Restart=always" | tee -a /etc/systemd/system/xmrig.service
 echo "RestartSec=3" | tee -a /etc/systemd/system/xmrig.service
 echo "User=root" | tee -a /etc/systemd/system/xmrig.service
-echo "ExecStart=/root/MINERS/xmrig/xmrig ${POOL_COIN} ${POOL_TLS} -o ${POOL_HOST}:${POOL_PORT} -u ${POOL_USER} -p ${POOL_PASS} --log-file=/var/log/xmrig.log --donate-level=0" | tee -a /etc/systemd/system/xmrig.service
+echo "ExecStart=/root/MINERS/xmrig/xmrig ${POOL_COIN} ${POOL_TLS} -o ${POOL_HOST}:${POOL_PORT} -u ${POOL_USER} -p ${POOL_PASS} ${POOL_LOG} --donate-level=0" | tee -a /etc/systemd/system/xmrig.service
 echo "" | tee -a /etc/systemd/system/xmrig.service
 echo "[Install]" | tee -a /etc/systemd/system/xmrig.service
 echo "WantedBy=multi-user.target" | tee -a /etc/systemd/system/xmrig.service
