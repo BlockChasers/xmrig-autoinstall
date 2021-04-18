@@ -7,7 +7,7 @@ apt upgrade -y ; apt dist-upgrade -y ;
 
 echo "INSTALLING REQ'D PACKAGES"
 
-apt install -y logrotate ntp ntpdate cpulimit ${APT_REQ_PKGS} ;
+apt install -y dialog logrotate ntp ntpdate cpulimit ${APT_REQ_PKGS} ;
 
 echo "CREATING DIRECTORIES"
 
