@@ -72,4 +72,4 @@ git pull
 
 Yes there will be an uninstall script ... eventually :)
 
-** ~ BlockChasers.ca**
+### ~ BlockChasers.ca
