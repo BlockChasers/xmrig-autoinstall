@@ -63,3 +63,5 @@ chmod +x installer.sh
 
 ./installer.sh
 ```
+
+EOF
