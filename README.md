@@ -70,6 +70,8 @@ git pull
 # I might add one more command at the bottom here in future to execute some post-update changes.
 ```
 
+Yes there will be an uninstall script ... eventually :)
+
 ~ leshacat
 
 EOF
