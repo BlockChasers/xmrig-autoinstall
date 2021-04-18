@@ -18,6 +18,7 @@ cd MINERS
 
 echo "CLONING XMRIG"
 
+rm -rf xmrig
 git clone https://github.com/MoneroOcean/xmrig.git
 
 cd xmrig
