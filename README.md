@@ -50,6 +50,10 @@ chmod +x *.sh
 ```
 
 ### Update Git Sources (scripts)
+Probably do this weekly for now until main parts are done. Will add auto-update script repos in future.
+You must manually initiate the installation/reconfiguration scripts.
+It would make no sense to auto compile XMRig as the miner is currently using the binary.
+I could possibly make it copy the binary elsewhere for the service unit, then this may be possible in short future.
 ```
 # CHANGE TO DIR WHERE YOU INSTALLED SCRIPTS
 cd /home/USER/somedir/
