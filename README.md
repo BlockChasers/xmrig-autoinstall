@@ -101,3 +101,5 @@ Yes there will be an uninstall script ... eventually :)
 **XMR:** 43aRmqLF6kaGqwh3qGxMgpYaWBxAXxFAnZabCouZyRrR1gLyi29YCUxdCTtRJjiBKB2sBUkRjynUA9D2fRFL7tiE7iyftmY<br />
 
 ### ~ BlockChasers.ca
+
+EOF
